@@ -40,11 +40,13 @@ class TwitterExtensionServiceProvider extends AddonServiceProvider
             $this->app->singleton(
                 TwitterConnection::class,
                 function () use ($config) {
-                    return new TwitterOAuth(
-                        $config->get('anomaly.extension.twitter::twitter.consumer_key'),
-                        $config->get('anomaly.extension.twitter::twitter.consumer_secret'),
-                        $config->get('anomaly.extension.twitter::twitter.access_token'),
-                        $config->get('anomaly.extension.twitter::twitter.access_token_secret')
+                    return new TwitterConnection(
+                        new TwitterOAuth(
+                            $config->get('anomaly.extension.twitter::twitter.consumer_key'),
+                            $config->get('anomaly.extension.twitter::twitter.consumer_secret'),
+                            $config->get('anomaly.extension.twitter::twitter.access_token'),
+                            $config->get('anomaly.extension.twitter::twitter.access_token_secret')
+                        )
                     );
                 }
             );
