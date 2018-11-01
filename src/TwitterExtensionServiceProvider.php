@@ -3,6 +3,7 @@
 use Abraham\TwitterOAuth\TwitterOAuth;
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 use Anomaly\TwitterExtension\Twitter\TwitterConnection;
+use Anomaly\TwitterExtension\Twitter\TwitterExtensionPlugin;
 use Illuminate\Contracts\Config\Repository;
 
 /**
@@ -14,6 +15,15 @@ use Illuminate\Contracts\Config\Repository;
  */
 class TwitterExtensionServiceProvider extends AddonServiceProvider
 {
+
+    /**
+     * The addon plugins.
+     *
+     * @var array
+     */
+    protected $plugins = [
+        TwitterExtensionPlugin::class,
+    ];
 
     /**
      * Boot the addon.
