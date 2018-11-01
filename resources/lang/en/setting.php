@@ -2,10 +2,10 @@
 
 return [
     'consumer_key'        => [
-        'name' => 'API Key',
+        'name' => 'Consumer Key',
     ],
     'consumer_secret'     => [
-        'name' => 'API Secret',
+        'name' => 'Consumer Secret',
     ],
     'access_token'        => [
         'name' => 'Access Token',
