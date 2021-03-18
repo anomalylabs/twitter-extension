@@ -3,7 +3,7 @@
 use Abraham\TwitterOAuth\TwitterOAuth;
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 use Anomaly\TwitterExtension\Twitter\TwitterConnection;
-use Anomaly\TwitterExtension\Twitter\TwitterExtensionPlugin;
+use Anomaly\TwitterExtension\TwitterExtensionPlugin;
 use Illuminate\Contracts\Config\Repository;
 
 /**
