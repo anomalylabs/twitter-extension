@@ -1,4 +1,4 @@
-<?php namespace Anomaly\TwitterExtension\Twitter;
+<?php namespace Anomaly\TwitterExtension;
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
